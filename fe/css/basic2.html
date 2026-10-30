@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS 내부 스타일 시트 방식 -->
+    <style>
+        /* 스타일에서 주석 쓰는 법 css 를 작성하는 영역 */
+        /* html > head > style */
+
+        h1 { color : pink;}
+        h2 { color : rgb(85, 109, 129);}
+        h3 { color : orange;}
+        /* h5 { color : green;} */
+    </style>
+    <!-- 주석 단축기 ctrl + / -->
+    <!-- 
+    CSS 외부 스타일 시트 방식 외부 css 파일을 연결 -->
+    <link rel="stylesheet" href="basic.css">
+
+    <!-- 상단 경로 접근 법-->
+    <!-- link rel="stylesheet" href="../다른파일경로/해당파일" -->
+</head>
+<body>
+    <!-- body 화면에 표시되는 내용을 작성하는 영역-->
+    <!-- 각종 html 태그가 작성되는 영역-->
+    <h1>h1 CSS Basic</h1>
+
+    <!-- 인라인 스타일 방식 -->
+    <h1> 이놈 basic2임</h1>
+    <h1 style="color: gold;">h1 인라인으로 골드 강제</h1>
+    <h2 style="color: green;">h2 인라인으로 그린 강제</h2>
+    <h1>h1 컬러 인라인 강제 안함</h1>
+    <h2>h2 컬러 인라인 강제 안함</h2>
+    <h2 style=" color: blue;">h2 인라인으로 블루 강제</h2>
+    <h3>h3 태그</h3>
+    <h4 style="color: red;">h4 태그</h4>
+
+    <h5>basic2 h5 태그</h5>
+
+    <!--
+        내부 스타일 시트 vs 외부 스타일 시트
+        같은 선택자 레벨 + 같은 속성 >> 적용 순서 기준으로 나중속성이 적용
+
+        그니까 문법에서 더 밑줄이 이김 조건과 명시가 같을 경우
+        서로 같긴 한데 내외부가 다를 경우 좀 더 가깝고 내 귀에 캔디가 이김
+
+        ex) 프좀 더 뮤턴트 모드 보면 일반 좀비 위에 의상을 덮어 씌워서 특수좀비를
+        만드는 것 처럼 나중 + 더 특정된 상대가 있을 경우 ㅇㅇ 알잘딱
+        -->
+</body>
+</html>
