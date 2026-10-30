@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <head>
+
+        <style>
+        /* 그룹 선택자 ","로 구분해서 여러개 선택 가능 */
+        p,strong { color: red; }
+        
+        /* 자식 선택자 ">"로 구분해서 바로 아래 자식만 선택 가능 */
+        /*div > p { color: blue; } */    
+
+        /* 하위 선택자 " "(띄어쓰기)로 구분해서 바로 아래 자식이 아니더라도 선택 가능 */
+        /*div p { color: rgb(212, 0, 255); } */
+
+        /* 형제 선택자 "~"로 구분해서 같은 부모를 가진 형제 선택 가능 */
+        /* p ~ span { color: goldenrod; }  */    
+        
+        /* 인접 형제 선택자 "+"로 구분해서 같은 부모를 가진 바로 다음 형제 선택 가능 */
+        /*div + p { color: green; } */
+
+        /* 가상 요소 선택자 ::before, ::after, ::first-letter, ::first-line, ::selection */
+        #vr-p::before{
+            content:"***";
+            color:rgb(30, 210, 84)
+
+        }
+
+        #vr-p::after{
+            content:"###";
+            color:rgb(2, 78, 83)
+        }
+
+        /* 가상 클래스 선택자 
+        :hover, :active, :focus, :visited, :checked, :disabled, :enabled
+        , :first-child, :last-child, :nth-child(n), :not(selector) */
+
+        a:link { color: red; }
+        a:visited { color: blue; }
+
+        a:hover  { color: pink; }
+        a:active { color: green; }
+
+        .chk:checked + span { color: rgb(255, 51, 0); }
+        .chk:checked + label { color: rgb(251, 255, 2); }
+
+        input:focus { background-color: rgb(255, 51, 0); }
+        
+        </style>
+    *  </head>
+<body>
+    <div class="top-div">
+        <p>p1</p>
+        <p>p2</p>
+        <span>span1</span>
+        <span>span2</span>
+
+        <div>
+            <p>p3</p>
+            <p id="vr-p">p4</p>
+            <strong>strong</strong>
+            <span>span3</span>
+        </div>
+
+        <div>
+            <strong>strong2</strong>
+            <span>span4</span>
+        </div>
+
+    </div>
+
+    <p>p5</p>
+
+    <a href="https://www.samsungsvc.co.kr/">삼성서비스</a>
+    <a href="https://www.lge.co.kr/">LG전자</a>
+    <a href="https://www.naver.com">네이버</a>
+
+    <br><br>
+
+    <input type="text" value="value"> <br>
+    <input type="text" placeholder="placeholder"> <br>
+    <input type="text" value="value" disabled> <br>
+
+    <br>
+
+    <input type="checkbox" class="chk"><span>출근</span><br>
+    <input type="checkbox" class="chk"><span>퇴근</span><br>
+
+    <input type="checkbox" class="chk" id="retire"><label for="retire">조퇴</label><br>
+    <label>
+        <input type="checkbox" class="chk">
+        <span>조퇴</span>
+    </label><br>
+</body>
+</html>

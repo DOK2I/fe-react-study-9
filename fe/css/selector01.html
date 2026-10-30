@@ -11,14 +11,19 @@
         /* 전체 선택자 */
         * { color : blue}
 
-        /* 태그 선택자 */
+        /* 태그 선택자 암것도 앞에 붙이지마*/
         h2 { color : red }
     
-        /* id 선택자 */
+        /* id 선택자 이름 앞에 # 사용하면 됨 나머진 맘댈*/
         #select-id { color : goldenrod }
 
-        /* class 선택자 */
+        /* class 선택자 이름 앞에 . 사용하면 됨 나머진 맘댈*/
         .select-class { color : rgb(179, 192, 0) }
+
+        /* 속성 선택자 */
+        [href] { color : gray;}
+        [target="_naver"] { color : green; }
+        [target="_youtube"] { color : red; }    
     </style>
 
 </head>
@@ -34,9 +39,9 @@
     <p>p 셋</p>
     <p>p 넷</p>
 
-    <a href="https://www.naver.com" target="_blank">네이버로 이동</a>
+    <a href="https://www.naver.com" target="_naver">네이버로 이동</a>
     <a href="https://www.google.com" target="_self">구글로 이동</a>
-    <a href="https://www.youtube.com" target="_self">유튜브로 이동</a>
+    <a href="https://www.youtube.com" target="_youtube">유튜브로 이동</a>
     <h2>h2</h2>
     <h2 class="select-class">h2</h2>
 </body>
