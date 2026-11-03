@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <span>고객명 : </span><input type="text" value="">
+    <br>
+    <br>
+        <span>전화번호 : </span><input type="tel" value="">
+    <br>
+    <br>
+            <span>Email : </span><input type="email" value="">
+            <br>
+            <p>피자선택 : <select>
+                <option disabled selected>피자를 선택해주세요</option>
+                <option>치즈피자</option>
+                <option>페퍼로니</option>
+                <option>콤비네이션</option>
+            </select></p>
+            <fieldset>
+                <legend>피자 사이즈</legend>
+            <label>
+            <input type="radio" name="set">Small
+                </label>
+                <br>
+                <br>
+            <label>
+            <input type="radio" name="set">Medium
+                </label>
+                <br>    
+                <br>        
+            <label>
+            <input type="radio" name="set">Large
+                </label>
+                <br>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>토핑 선택</legend>
+            <label>
+            <input type="checkbox" name="set">베이컨
+                </label>
+                <br>
+                <br>
+            <label>
+            <input type="checkbox" name="set">치즈
+                </label>
+                <br>    
+                <br>
+            <label> 
+            <input type="checkbox" name="set">양파
+                </label>
+                <br>
+                <br>
+            <label>
+            <input type="checkbox" name="set">버섯
+                </label>
+                <br>
+                <br>
+            </fieldset>
+            <br>
+            <br>
+            <label for="DT">희망배송시간 : </label>
+            <input type="time" name="DT" id="DT">
+            <br>
+            <br>
+            <label for="reqt">배송 시 요청사항 :</label>
+            <textarea id="reqt" name="reqt" rows="3" cols="30"></textarea>
+            <br>
+            <br>
+            <button type="submit">주문하기</button>
+            </form>
+            
+</body>
+</html>
