@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 박스 배치 과제</title>
+
+    <style>
+        /* 전체 박스 */
+        .container {
+            width: 500px;
+            margin: 50px auto 0;
+        }
+
+        /* 빨간색과 초록색 박스 */
+        .top-box {
+            display: flex;
+        }
+
+        .red {
+            width: 250px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .green {
+            width: 250px;
+            height: 100px;
+            background-color: green;
+        }
+
+        /* 가운데 정렬 글자 */
+        .text {
+            text-align: center;
+        }
+
+        /* 파란색 박스 */
+        .blue {
+            width: 500px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-box">
+            <div class="red"></div>
+            <div class="green"></div>
+        </div>
+
+        <div class="text">
+            글자가운데정렬
+        </div>
+
+        <div class="blue"></div>
+
+    </div>
+
+</body>
+</html>
